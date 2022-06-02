@@ -5,8 +5,6 @@ const styles = {
   layout: {
     display: 'flex',
     alignItems: 'center',
-    width: '100%',
-    maxWidth: '1200px',
   },
   products: {
     display: 'grid',
@@ -15,7 +13,6 @@ const styles = {
     gap: '10px',
     margin: '15px',
     width: '100%',
-    maxWidth: '1200px',
   },
 }
 
