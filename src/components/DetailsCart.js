@@ -7,9 +7,9 @@ const styles = {
     marginTop: '20px',
     boxShadow: '1px 5px 5px rgb(0,0,0,0.3)',
     borderRadius: '5px 5px 0 0',
-    width: '300px',
+    width: '400px',
     right: '50px',
-    color: '#171717',
+    color: '#404040',
   },
   ul: {
     margin: 0,
@@ -26,24 +26,49 @@ const styles = {
   imgCart: {
     width: '50px',
   },
+  grandTotal: {
+    textAlign: 'center',
+    fontWeight: 600,
+  },
+  grandTotalPrice: {
+    fontWeight: 700,
+  },
+  itemButton: {
+    border: 'none',
+    width: '20px',
+    height: '20px',
+  }
 }
 
 class DetailsCart extends Component {
   render() {
-    const { cart } = this.props
-    console.log(cart[0])
+    const { cart, mutateCart } = this.props
+    let dollarUS = Intl.NumberFormat('en-US');
+    const grandTotal = dollarUS.format(cart.reduce((acc, el) => acc + el.price*el.quantity, 0))
     return (
       <div style={styles.detailsCart}>
         <ul style={styles.ul}>
-          {cart.map(el =>
-            <li style={styles.product} key={el.name}>
-              <img alt={el.name} src={el.img} style={styles.imgCart} />
-              {el.name}
-              <span>{el.quantity} pcs.</span>
-              <span>{el.price}</span>
+          {cart.map(cartElement =>
+            <li style={styles.product} key={cartElement.name}>
+              <img alt={cartElement.name} src={cartElement.img} style={styles.imgCart} />
+              {cartElement.name}
+              <span>{cartElement.quantity} {cartElement.quantity === 1 ? 'pc.' : 'pcs.'}</span>
+              <span>${dollarUS.format(cartElement.price*cartElement.quantity)}</span>
+              <div>
+                <button style={styles.itemButton} onClick= {() => mutateCart(cartElement, -1)}>-</button>
+                <button style={styles.itemButton} onClick= {() => mutateCart(cartElement)}>+</button>
+              </div>
             </li>
           )}
         </ul>
+        {parseInt(grandTotal, 10) > 0 
+          ? <h4 style={styles.grandTotal}>
+              Grand total: $<span style={styles.grandTotalPrice}>{grandTotal}</span>
+            </h4>
+          : <h4 style={styles.grandTotal}>
+              ☄️ Add your first <span style={styles.grandTotalPrice}>item</span>!
+            </h4>
+        }
       </div>
     )
   }
