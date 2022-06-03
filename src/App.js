@@ -5,6 +5,11 @@ import Layout from './components/Layout';
 import Title from './components/Title';
 
 const styles = {
+  main: {
+    margin: '0',
+    padding: '0',
+    boxSizing: 'border-box',
+  },
   layout: {
     display: 'flex',
     flexDirection: 'column',
@@ -25,17 +30,51 @@ class App extends Component {
       { name: 'Gabinet', price: '$3 500.00', img: '/products/gabinet.png' },
       { name: 'Keyboard', price: '$3 000.00', img: '/products/keyboard.png' },
       { name: 'Mouse', price: '$2 000.00', img: '/products/mouse.png' },
-    ]
+    ],
+    cart: [],
+    isCartVisible: false,
+  }
+
+  addToCart = (product) => {
+    const { cart } = this.state
+    if (cart.find(el => el.name === product.name)) {
+      const newCart = cart.map(el => el.name === product.name
+        ? ({
+          ...el,
+          quantity: el.quantity + 1
+        })
+        : el
+        )
+      return this.setState({ cart: newCart })
+    }
+    return this.setState({
+      cart: this.state.cart.concat({
+        ...product,
+        quantity: 1,
+      })
+    })
+  }
+
+  showCart = () => {
+    if (!this.state.cart.length) {
+      return
+    }
+    this.setState({ isCartVisible: !this.state.isCartVisible })
   }
 
   render() {
+    const { isCartVisible } = this.state
     return (
-      <div>
-        <Navbar />
+      <div style={styles.main}>
+        <Navbar
+          cart={this.state.cart}
+          isCartVisible={isCartVisible}
+          showCart={this.showCart}
+        />
         <Layout style={styles.layout}>
           <Title />
           <Products
-            addToCart = {() => console.log('No hace nada')}
+            addToCart = {this.addToCart}
             products = {this.state.products}
           />
         </Layout>
