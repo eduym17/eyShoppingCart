@@ -1,5 +1,6 @@
 import { Component } from "react";
 import Logo from './Logo';
+import Cart from './Cart';
 
 const styles = {
   navbar: {
@@ -18,10 +19,15 @@ const styles = {
 
 class Navbar extends Component {
   render() {
+    const { cart, isCartVisible, showCart } = this.props
     return (
       <nav style={styles.navbar}>
         <Logo />
-        <p>Carro</p>
+        <Cart
+          cart={cart}
+          isCartVisible={isCartVisible}
+          showCart={showCart}
+        />
       </nav>
     )
   }
