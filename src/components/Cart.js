@@ -22,7 +22,7 @@ const styles = {
 
 class Cart extends Component {
   render() {
-    const { cart, isCartVisible, showCart } = this.props
+    const { cart, isCartVisible, showCart, mutateCart } = this.props
     const quantity = cart.reduce((acc, el) => acc + el.quantity, 0)
     return (
       <div>
@@ -35,7 +35,7 @@ class Cart extends Component {
         <button onClick={showCart} style={styles.cart}>
           Shopping cart
         </button>
-        {isCartVisible ? <DetailsCart cart={cart}/> : null}
+        {isCartVisible ? <DetailsCart cart={cart}  mutateCart={mutateCart}/> : null}
       </div>
     )
   }

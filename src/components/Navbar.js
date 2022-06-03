@@ -19,7 +19,7 @@ const styles = {
 
 class Navbar extends Component {
   render() {
-    const { cart, isCartVisible, showCart } = this.props
+    const { cart, isCartVisible, showCart, mutateCart } = this.props
     return (
       <nav style={styles.navbar}>
         <Logo />
@@ -27,6 +27,7 @@ class Navbar extends Component {
           cart={cart}
           isCartVisible={isCartVisible}
           showCart={showCart}
+          mutateCart={mutateCart}
         />
       </nav>
     )

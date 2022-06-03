@@ -18,14 +18,14 @@ const styles = {
 
 class Products extends Component {
   render () {
-    const { products, addToCart } = this.props
+    const { products, mutateCart } = this.props
 
     return (
       <div style={styles.layout}>
         <div style={styles.products}>
           {products.map(product =>
             <Product
-              addToCart={addToCart}
+              mutateCart={mutateCart}
               key={product.name}
               product={product}
             />

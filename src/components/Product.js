@@ -30,22 +30,29 @@ const styles = {
   price: {
     margin: '0',
   },
+  itemButton: {
+    border: 'none',
+    width: '20px',
+    height: '20px',
+  },
 }
 
 class Product extends Component {
   render () {
-    const { product, addToCart } = this.props
-
+    const { product, mutateCart } = this.props
+    let dollarUS = Intl.NumberFormat('en-US');
     return (
       <div style={styles.product}>
         <img style={styles.img} alt={product.name} src={product.img}/>
         <div style={styles.info}>
           <h3 style={styles.title}>{product.name}</h3>
-          <p style={styles.price}>{product.price}</p>
+          <p style={styles.price}>${dollarUS.format(product.price)}</p>
         </div>
-        <Button onClick= {() => addToCart(product)}>
-          Add to cart
-        </Button>
+        <div>
+          <Button onClick= {() => mutateCart(product)}>
+            Add to cart
+          </Button>
+        </div>
       </div>
     )
   }
