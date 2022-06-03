@@ -1,6 +1,8 @@
 import { Component } from 'react';
 import Products from './components/Products';
+import Navbar from './components/Navbar';
 import Layout from './components/Layout';
+import Title from './components/Title';
 
 const styles = {
   layout: {
@@ -28,12 +30,16 @@ class App extends Component {
 
   render() {
     return (
-      <Layout style={styles.layout}>
-        <Products
-          addToCart = {() => console.log('No hace nada')}
-          products = {this.state.products}
-        />
-      </Layout>
+      <div>
+        <Navbar />
+        <Layout style={styles.layout}>
+          <Title />
+          <Products
+            addToCart = {() => console.log('No hace nada')}
+            products = {this.state.products}
+          />
+        </Layout>
+      </div>
     );
   }
 }
