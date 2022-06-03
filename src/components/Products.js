@@ -8,7 +8,7 @@ const styles = {
   },
   products: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)',
+    gridTemplateColumns: 'repeat(4, 1fr)',
     justifyItems: 'center',
     gap: '10px',
     margin: '15px',

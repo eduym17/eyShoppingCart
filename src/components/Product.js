@@ -11,10 +11,25 @@ const styles = {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: 'white',
   },
   img: {
     height: '150px',
-  }
+    padding: '10px 0',
+  },
+  info: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    margin: '10px 0',
+  },
+  title: {
+    color: '#404040',
+    margin: '0',
+  },
+  price: {
+    margin: '0',
+  },
 }
 
 class Product extends Component {
@@ -24,8 +39,10 @@ class Product extends Component {
     return (
       <div style={styles.product}>
         <img style={styles.img} alt={product.name} src={product.img}/>
-        <p>{product.name}</p>
-        <p>{product.price}</p>
+        <div style={styles.info}>
+          <h3 style={styles.title}>{product.name}</h3>
+          <p style={styles.price}>{product.price}</p>
+        </div>
         <Button onClick= {() => addToCart(product)}>
           Add to cart
         </Button>

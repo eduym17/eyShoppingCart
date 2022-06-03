@@ -2,8 +2,8 @@ import { Component } from "react";
 
 const styles = {
   layout: {
-    backgroundColor: 'white',
-    color: 'gray',
+    backgroundColor: '#F4F4F5',
+    color: '#71717A',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
