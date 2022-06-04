@@ -73,7 +73,7 @@ npm
   ```
   
   ```sh
-  cd main
+  cd EY-shopping-cart
   ```
 
 ### Install
