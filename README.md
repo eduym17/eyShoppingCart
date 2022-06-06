@@ -25,7 +25,7 @@ PC components shopping page, includes shopping cart.
 
 ## Live page
 
-[Live demo link](https://www.livedemo.com)
+[Not demo link available yet](https://www.livedemo.com)
 
 ## Built with
 
