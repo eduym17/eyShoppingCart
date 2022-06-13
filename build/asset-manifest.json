@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/EY-shopping-cart/static/css/main.e6c13ad2.css",
+    "main.js": "/EY-shopping-cart/static/js/main.205556c0.js",
+    "static/js/787.8fb450b3.chunk.js": "/EY-shopping-cart/static/js/787.8fb450b3.chunk.js",
+    "index.html": "/EY-shopping-cart/index.html",
+    "main.e6c13ad2.css.map": "/EY-shopping-cart/static/css/main.e6c13ad2.css.map",
+    "main.205556c0.js.map": "/EY-shopping-cart/static/js/main.205556c0.js.map",
+    "787.8fb450b3.chunk.js.map": "/EY-shopping-cart/static/js/787.8fb450b3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.205556c0.js"
+  ]
+}
