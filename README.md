@@ -25,7 +25,7 @@ PC components shopping page, includes shopping cart.
 
 ## Live page
 
-[Not demo link available yet](https://www.livedemo.com)
+[Live demo link](https://eduym17.github.io/EY-shopping-cart/build/)
 
 ## Built with
 
