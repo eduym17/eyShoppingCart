@@ -3,6 +3,7 @@ import Products from './components/Products';
 import Navbar from './components/Navbar';
 import Layout from './components/Layout';
 import Title from './components/Title';
+import * as products from './assets/images';
 
 const styles = {
   main: {
@@ -21,15 +22,15 @@ const styles = {
 class App extends Component {
   state = {
     products: [
-      { name: 'Laptop', price: 25000.00, img: '/products/laptop.png' },
-      { name: 'Motherboard', price: 3000.00, img: '/products/motherboard.png' },
-      { name: 'Video card', price: 15000.00, img: '/products/videocard.png' },
-      { name: 'Monitor', price: 12000.00, img: '/products/monitor.png' },
-      { name: 'Power supply', price: 4500.00, img: '/products/power-supply.png' },
-      { name: 'Router', price: 2500.00, img: '/products/router.png' },
-      { name: 'Gabinet', price: 3500.00, img: '/products/gabinet.png' },
-      { name: 'Keyboard', price: 3000.00, img: '/products/keyboard.png' },
-      { name: 'Mouse', price: 2000.00, img: '/products/mouse.png' },
+      { name: 'Laptop', price: 25000.00, img: products.laptop },
+      { name: 'Motherboard', price: 3000.00, img: products.motherboard },
+      { name: 'Video card', price: 15000.00, img: products.videocard },
+      { name: 'Monitor', price: 12000.00, img: products.monitor },
+      { name: 'Power supply', price: 4500.00, img: products.powerSupply },
+      { name: 'Router', price: 2500.00, img: products.router },
+      { name: 'Gabinet', price: 3500.00, img: products.gabinet },
+      { name: 'Keyboard', price: 3000.00, img: products.keyboard },
+      { name: 'Mouse', price: 2000.00, img: products.mouse },
     ],
     cart: [],
     isCartVisible: false,
