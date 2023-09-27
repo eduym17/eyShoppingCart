@@ -1,4 +1,3 @@
-# ☄️ README.md from [@eduym17](https://github.com/eduym17)
 <img width="1247" alt="image" src="https://user-images.githubusercontent.com/96452418/171972468-80dc4f84-788c-424c-bf85-3373a3f5dee8.png">
 
 <div align=center>
