@@ -68,11 +68,11 @@ npm
 ### Setup
 
   ```sh
-  $ git clone https://github.com/eduym17/EY-shopping-cart
+  $ git clone https://github.com/eduym17/eyShoppingCart
   ```
   
   ```sh
-  cd EY-shopping-cart
+  cd eyShoppingCart
   ```
 
 ### Install

@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/EY-shopping-cart/build/static/css/main.e6c13ad2.css",
-    "main.js": "/EY-shopping-cart/build/static/js/main.833d6afd.js",
-    "static/js/787.8fb450b3.chunk.js": "/EY-shopping-cart/build/static/js/787.8fb450b3.chunk.js",
-    "static/media/laptop.png": "/EY-shopping-cart/build/static/media/laptop.eac320ba531292f53533.png",
-    "static/media/keyboard.png": "/EY-shopping-cart/build/static/media/keyboard.e07472779b9f8329ea7c.png",
-    "static/media/monitor.png": "/EY-shopping-cart/build/static/media/monitor.ed8ef1e07c6e17b909aa.png",
-    "static/media/mouse.png": "/EY-shopping-cart/build/static/media/mouse.97cc9a8a480386759a30.png",
-    "static/media/motherboard.png": "/EY-shopping-cart/build/static/media/motherboard.5d0b1d4fc732b03ef5db.png",
-    "static/media/gabinet.png": "/EY-shopping-cart/build/static/media/gabinet.72ca3174b536710e0e06.png",
-    "static/media/power-supply.png": "/EY-shopping-cart/build/static/media/power-supply.6506bd0be46bab0d7462.png",
-    "static/media/headphones.png": "/EY-shopping-cart/build/static/media/headphones.945df13b36981d4eb98d.png",
-    "static/media/videocard.png": "/EY-shopping-cart/build/static/media/videocard.d3df7c2569549e2d86dc.png",
-    "static/media/router.png": "/EY-shopping-cart/build/static/media/router.377091ce964b4d224824.png",
-    "index.html": "/EY-shopping-cart/build/index.html",
-    "main.e6c13ad2.css.map": "/EY-shopping-cart/build/static/css/main.e6c13ad2.css.map",
-    "main.833d6afd.js.map": "/EY-shopping-cart/build/static/js/main.833d6afd.js.map",
-    "787.8fb450b3.chunk.js.map": "/EY-shopping-cart/build/static/js/787.8fb450b3.chunk.js.map"
+    "main.css": "/eyShoppingCart/build/static/css/main.e6c13ad2.css",
+    "main.js": "/eyShoppingCart/build/static/js/main.d9807bc8.js",
+    "static/js/787.8fb450b3.chunk.js": "/eyShoppingCart/build/static/js/787.8fb450b3.chunk.js",
+    "static/media/laptop.png": "/eyShoppingCart/build/static/media/laptop.eac320ba531292f53533.png",
+    "static/media/keyboard.png": "/eyShoppingCart/build/static/media/keyboard.e07472779b9f8329ea7c.png",
+    "static/media/monitor.png": "/eyShoppingCart/build/static/media/monitor.ed8ef1e07c6e17b909aa.png",
+    "static/media/mouse.png": "/eyShoppingCart/build/static/media/mouse.97cc9a8a480386759a30.png",
+    "static/media/motherboard.png": "/eyShoppingCart/build/static/media/motherboard.5d0b1d4fc732b03ef5db.png",
+    "static/media/gabinet.png": "/eyShoppingCart/build/static/media/gabinet.72ca3174b536710e0e06.png",
+    "static/media/power-supply.png": "/eyShoppingCart/build/static/media/power-supply.6506bd0be46bab0d7462.png",
+    "static/media/headphones.png": "/eyShoppingCart/build/static/media/headphones.945df13b36981d4eb98d.png",
+    "static/media/videocard.png": "/eyShoppingCart/build/static/media/videocard.d3df7c2569549e2d86dc.png",
+    "static/media/router.png": "/eyShoppingCart/build/static/media/router.377091ce964b4d224824.png",
+    "index.html": "/eyShoppingCart/build/index.html",
+    "main.e6c13ad2.css.map": "/eyShoppingCart/build/static/css/main.e6c13ad2.css.map",
+    "main.d9807bc8.js.map": "/eyShoppingCart/build/static/js/main.d9807bc8.js.map",
+    "787.8fb450b3.chunk.js.map": "/eyShoppingCart/build/static/js/787.8fb450b3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.833d6afd.js"
+    "static/js/main.d9807bc8.js"
   ]
 }
